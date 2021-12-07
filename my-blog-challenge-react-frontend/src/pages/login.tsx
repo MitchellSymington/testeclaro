@@ -13,6 +13,11 @@ function Login() {
   const onSubmit = async (data: ICreateUserSessionDTO) => {
     try {
       await signIn(data);
+
+      //history.push('/posts');
+      
+      history.push('/modal');
+
     } catch (error) {
       console.error(error);
     }
