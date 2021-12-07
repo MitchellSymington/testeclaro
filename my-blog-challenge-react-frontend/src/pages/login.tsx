@@ -14,9 +14,9 @@ function Login() {
     try {
       await signIn(data);
 
-      //history.push('/posts');
+      history.push('/posts');
       
-      history.push('/modal');
+      //history.push('/modal');
 
     } catch (error) {
       console.error(error);
